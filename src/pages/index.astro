@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+---
+
+<Layout title='Welcome to Astro.'>
+  <main>
+    <h1>Welcome to <span class='text-gradient'>EduGuidance</span></h1>
+    <ul role='list' class='link-card-grid'>
+      <Card
+        title='1. Architecture and engineering'
+        body="People in the architecture and planning fields are responsible for designing new structures or creating aesthetically pleasing, practical and structurally sound environments. Many positions require an undergraduate or graduate degree. Jobs in this field include:"
+        list="Architect, Civil engineer, Landscape architect, Sustainable designer, Biomedical engineer, Related: 19 Types of Architects (Plus Related Careers To Consider)"
+      />
+			<Card title='2. Arts, culture and entertainment'
+			body="This career field is dedicated to enriching people's lives through culture and the sharing of arts and self-expression. There are formal educational programs for these fields, but these careers also include self-taught people who have natural talent. Some jobs in this field include:"
+			list="Singer/songwriter, Music producer, Art curator, Animator/video game designer, Filmmaker, Graphic designer, Fashion designer, Photographer, Related: Careers In the Creative Arts Industry: The Best Jobs for Creatives"/>
+			<Card title='3. Business, management and administration'
+			body="The business, management and administration career fields are best for business-minded individuals with a penchant for communication. They work to execute various processes necessary for the functioning of businesses. It usually involves working in an office environment. Here are some of the positions in this field:"
+			list="Human resources manager, Marketing assistant, Accountants, Secretary, Entrepreneur/small business owner, Real estate agent, Business development manager, Related: 15 Best Business Jobs To Consider (With Salaries and Job Outlook)"/>
+			<Card title='4. Communications'
+			body="The communications career field is about mastering the art of delivering a targeted message to diverse groups of people. Some positions in this field include:"
+			list="Journalist, Copywriter,	Communications manager,	Public relations specialist, Meeting/event planner,	Social media manager, Brand manager, Related: 16 Top Jobs For Graduates With Communications Degrees"/>
+			<Card title='5. Community and social services'
+			body="The community and social services career field include jobs that offer tangible support to people and communities to enrich the lives of people. Based in ideals of social justice and equality, this career path is for people who want to improve social systems and services. Often, people go in this field because there is a specific group of people they wish to advocate for or help."
+			list=""/>
+			<Card title='6. Education'
+			body="The education field is dedicated to the art of skillfully disseminating knowledge and information to people. The most obvious job in this field are teachers, but it is not just limited to teaching. There are also management, administrative and board member jobs, for example. Here are some jobs you can find in this field:"
+			list="Special education teacher, School principal,	Superintendent,	College professor,	School librarian, 	Substitute teacher, Related: Popular Careers in Education You Can Pursue"/>
+			<Card title='7. Science and technology'
+			body=""
+			list=""/>
+			<Card title='8. Installation, repair and maintenance'
+			body=""
+			list=""/>
+			<Card title='9. Farming, fishing and forestry'
+			body=""
+			list=""/>
+			<Card title='10. Government'
+			body=""
+			list=""/>
+			<Card title='11. Health and medicine'
+			body=""
+			list=""/>
+			<Card title='12. Law and public policy'
+			body=""
+			list=""/>
+			<Card title='13. Sales'
+			body=""
+			list=""/>
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 1080px;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+</style>
